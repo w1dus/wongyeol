@@ -53,7 +53,7 @@ const bodyScroll = () => {
   
 const headerScrollHandler = () => {
     /* header */
-    const header_main = document.querySelector('header');
+    const header_main = document.querySelector('header.scroll');
 
     if(header_main){
         document.addEventListener("scroll", function(){

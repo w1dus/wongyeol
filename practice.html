@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!-- 부트스트랩 아이콘 -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Hhxv8Dq3Hcqwtq2//LFxx2YDnZtbbDl0QmXQ4frxkJsoaI/T/uDpLWvSLJkVAjP" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- 헤더 { -->
+        <header class="scroll sub">
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/common/logo.svg" alt="법무법인 원결" class="logo default">
+                    <img src="./img/common/logo-white.svg" alt="법무법인 원결" class="logo white">
+                </a>
+
+                <nav>
+                    <ul class="menu-list">
+                        <li><a href="./about.html">법무법인 원결</a></li>
+                        <li><a href="./members.html">구성원</a></li>
+                        <li><a href="./practice.html">업무분야</a></li>
+                        <li><a href="./success.html">성공사례</a></li>
+                        <li><a href="./press.html">언론보도</a></li>
+                        <li><a href="./consult.html">상담신청</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <!-- } 헤더 끝-->
+        <!-- aside 메뉴 { -->
+        <section class="aside-section">
+            <div class="menu-div">
+                <div class="btn-wrap">
+                    <button type="button" class="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="menu-list">
+                    <ul class="menu">
+                        <li><a href="./about.html" class="item">법무법인 원결</a></li>
+                        <li><a href="./members.html" class="item">구성원</a></li>
+                        <li class="has-sub">
+                            <button type="button" class="sub-toggle">업무분야
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-down arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>
+                            </button>
+                                                        <ul class="sub-menu">
+                                <li><a href="./practice.html">형사</a></li>
+                                <li><a href="./practice-family.html">가사</a></li>
+                                <li><a href="./practice-labor.html">노동</a></li>
+                                <li><a href="./practice-divorce.html">이혼</a></li>
+                                <li><a href="./practice-school.html">학교폭력</a></li>
+                                <li><a href="./practice-corporate.html">기업</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./success.html" class="item">성공사례</a></li>
+                        <li><a href="./press.html" class="item">언론보도</a></li>
+                        <li><a href="./consult.html" class="item">상담신청</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="close-bg"></div>
+        </section>
+        <!-- } aside 메뉴 끝 -->
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+
+                <!-- 서브 컨텐츠 { -->
+                <main class="sub practice">
+
+                    <!-- 히어로 { -->
+                    <section class="practice-visual" style="background-image: url('./img/practice/hero.png');">
+                        <div class="inner">
+                            <div class="sub-en">PRACTICE AREAS</div>
+                            <h1>업무 분야</h1>
+                        </div>
+                    </section>
+                    <!-- } 히어로 -->
+
+                    <!-- 탭 { -->
+                                        <nav class="practice-tabs">
+                        <div class="inner">
+                            <a href="./practice.html" class="active">형사</a>
+                            <a href="./practice-family.html">가사</a>
+                            <a href="./practice-labor.html">노동</a>
+                            <a href="./practice-divorce.html">이혼</a>
+                            <a href="./practice-school.html">학교폭력</a>
+                            <a href="./practice-corporate.html">기업</a>
+                        </div>
+                    </nav>
+                    <!-- } 탭 -->
+
+                    <!-- 인트로 { -->
+                    <section class="practice-intro">
+                        <div class="inner">
+                            <h2 class="cate-title">형사</h2>
+                            <div class="desc">
+                                <p>형사사건은 초기 대응 방향에 따라 사건의 결과가 크게 달라질 수 있습니다.</p>
+                                <p>법무법인 원결은 부장검사 출신 전관 변호사와 형사 분야 전문 변호사들의 협업 시스템을 바탕으로 수사 단계부터 재판까지 체계적이고 전략적인 대응을 제공합니다.</p>
+                                <p>사건의 흐름과 핵심 쟁점을 면밀히 분석하여 의뢰인에게 가장 적합한 해결 방향을 제시하며 끝까지 책임감 있게 함께합니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- } 인트로 -->
+
+                    <!-- 형사사건이란? { -->
+                    <section class="practice-about">
+                        <div class="inner">
+                            <h3 class="block-title">형사사건이란?</h3>
+                            <div class="block-text">
+                                <p>형사사건은 형법 및 특별법에 규정된 범죄행위에 대하여 국가가 수사와 재판 절차를 통해 형사책임을 판단하는 사건을 의미합니다.</p>
+                                <p>형법은 범죄의 성립 요건과 그에 대한 처벌 기준을 규정한 법률이며 폭행·상해·사기·횡령·배임·성범죄·음주운전·마약범죄 등 다양한 범죄 유형에 적용됩니다.</p>
+                                <p>또한 형사 절차 전반은 형사소송법에 따라 진행되며 수사기관의 조사 단계부터 기소 여부 판단, 재판 절차, 판결 이후의 형 집행 과정까지 포함하고 있습니다.</p>
+                                <p>형사사건은 초기 진술과 대응 방향에 따라 사건의 결과가 크게 달라질 수 있기 때문에 수사 초기 단계에서의 신속하고 정확한 대응이 중요합니다.</p>
+                                <p>특히 형사처벌은 벌금형이나 징역형뿐만 아니라 전과 기록, 사회적 신뢰, 직장 및 일상생활 등에도 영향을 미칠 수 있어 사건의 유형과 상황에 맞는 체계적인 대응이 필요합니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- } 형사사건이란? -->
+
+                    <!-- 주요업무 { -->
+                    <section class="practice-work">
+                        <div class="inner">
+                            <h3 class="block-title">주요업무</h3>
+                            <ul class="work-grid">
+                                <li class="work-card">
+                                    <div class="cate">기업형사</div>
+                                    <ul class="list">
+                                        <li>외국환거래법</li>
+                                        <li>관세법 위반</li>
+                                        <li>산업기술 유출</li>
+                                        <li>중대재해</li>
+                                        <li>공정거래 사건</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">경제범죄</div>
+                                    <ul class="list">
+                                        <li>사기</li>
+                                        <li>횡령 배임</li>
+                                        <li>주가조작</li>
+                                        <li>보험사기</li>
+                                        <li>보이스피싱</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">성범죄</div>
+                                    <ul class="list">
+                                        <li>강간·강제추행</li>
+                                        <li>통신매체이용음란</li>
+                                        <li>카메라등이용촬영</li>
+                                        <li>아동·청소년 성범죄</li>
+                                        <li>성매매</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">교통범죄</div>
+                                    <ul class="list">
+                                        <li>음주운전</li>
+                                        <li>무면허운전</li>
+                                        <li>뺑소니</li>
+                                        <li>교통사고처리특례법 위반</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">마약범죄</div>
+                                    <ul class="list">
+                                        <li>마약 투약 · 소지</li>
+                                        <li>마약 매매 · 알선</li>
+                                        <li>대마 · 향정 사건</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">형사 일반</div>
+                                    <ul class="list">
+                                        <li>폭행 · 상해</li>
+                                        <li>협박 · 공갈</li>
+                                        <li>명예훼손 · 모욕</li>
+                                        <li>스토킹</li>
+                                        <li>공무집행방해</li>
+                                    </ul>
+                                </li>
+                                <li class="work-card">
+                                    <div class="cate">수사 및 재판 대응</div>
+                                    <ul class="list">
+                                        <li>경찰·검찰 조사 대응</li>
+                                        <li>압수수색 대응</li>
+                                        <li>구속영장 대응</li>
+                                        <li>형사재판 변론</li>
+                                        <li>항소 · 상고 대응</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- } 주요업무 -->
+
+                    <!-- 업무사례 { -->
+                    <section class="practice-cases">
+                        <div class="inner">
+                            <div class="title-wrap">
+                                <h3 class="block-title">업무사례</h3>
+                                <a href="#" class="more-btn">더 알아보기 ></a>
+                            </div>
+                            <ul class="case-grid">
+                                <li>
+                                    <div class="sucess-item">
+                                        <div class="content-wrap">
+                                            <div class="category-div">형사</div>
+                                            <div class="title">대기업 계열사 외국환거래법 사건 변론</div>
+                                            <div class="date">2026.05.01</div>
+                                            <div class="content-div">대기업 계열사 임직원이 외국환거래법 위반 혐의로 수사를 받게 된 사건으로 복잡한 자금 흐름과 해외 거래 구조에 대한 면밀한 법리 검토가 필요한 사안이었습니다. 법무법인 원결은 거래 구조와 자금 이동 경위를 세밀하게 분석하고, 관련 계약 및 회계 자료를 체계적으로 검토하여 변론을 진행했습니다.</div>
+                                        </div>
+                                        <div class="result-div">무혐의</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sucess-item">
+                                        <div class="content-wrap">
+                                            <div class="category-div">형사</div>
+                                            <div class="title">대기업 계열사 외국환거래법 사건 변론</div>
+                                            <div class="date">2026.05.01</div>
+                                            <div class="content-div">대기업 계열사 임직원이 외국환거래법 위반 혐의로 수사를 받게 된 사건으로 복잡한 자금 흐름과 해외 거래 구조에 대한 면밀한 법리 검토가 필요한 사안이었습니다. 법무법인 원결은 거래 구조와 자금 이동 경위를 세밀하게 분석하고, 관련 계약 및 회계 자료를 체계적으로 검토하여 변론을 진행했습니다.</div>
+                                        </div>
+                                        <div class="result-div">무혐의</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sucess-item">
+                                        <div class="content-wrap">
+                                            <div class="category-div">형사</div>
+                                            <div class="title">대기업 계열사 외국환거래법 사건 변론</div>
+                                            <div class="date">2026.05.01</div>
+                                            <div class="content-div">대기업 계열사 임직원이 외국환거래법 위반 혐의로 수사를 받게 된 사건으로 복잡한 자금 흐름과 해외 거래 구조에 대한 면밀한 법리 검토가 필요한 사안이었습니다. 법무법인 원결은 거래 구조와 자금 이동 경위를 세밀하게 분석하고, 관련 계약 및 회계 자료를 체계적으로 검토하여 변론을 진행했습니다.</div>
+                                        </div>
+                                        <div class="result-div">무혐의</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- } 업무사례 -->
+
+                    <!-- CTA { -->
+                    <section class="practice-cta">
+                        <div class="inner">
+                            <span class="v-line"></span>
+                            <h2 class="cta-title">의뢰인의 가장 중요한 순간에 원결은 결과로 답합니다</h2>
+                            <p class="cta-sub">사건마다 다른 상황과 복잡한 문제 속에서도<br/>법무법인 원결은 끝까지 책임 있는 대응과 전략적인 해결을 이어갑니다.</p>
+                            <a href="#" class="cta-btn">상담신청</a>
+                            <span class="v-line"></span>
+                        </div>
+                    </section>
+                    <!-- } CTA -->
+
+                </main>
+                <!-- } 서브 컨텐츠 끝-->
+
+                <!-- 푸터 시작 { -->
+                <footer>
+                    <div class="inner">
+                        <div class="content-wrap">
+                            <div class="logo-div">
+                                <img src="./img/footer/logo.svg" alt="법무법인 원결" class="logo">
+                            </div>
+                            <div class="info-div">
+                                <p>상호(법인)명 : 법무법인 소울</p>
+                                <p>대표자 : 김성문</p>
+                                <p>사업자등록번호 : 123-45-67890</p>
+                            </div>
+                            <div class="info-div">
+                                <p>주소 : 강원특별자치도 원주시 00로 12 1 0층 </p>
+                                <p>대표번호 : 033-333-3333</p>
+                                <p>이메일 : wongyeol @ wongyeol.com</p>
+                            </div>
+                            <div class="load-map-div">
+                                <ul class="menu-list">
+                                    <li><a href="./about.html">법무법인 원결</a></li>
+                                    <li><a href="./members.html">구성원</a></li>
+                                    <li><a href="./practice.html">업무분야</a></li>
+                                    <li><a href="./success.html">성공사례</a></li>
+                                    <li><a href="./press.html">언론보도</a></li>
+                                    <li><a href="./consult.html">상담신청</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copy-right">ⓒ Lawfirm WONGYEOL All Rights Reserved.</div>
+                    </div>
+                </footer>
+                <!-- } 푸터 끝 -->
+            </article>
+
+            <!-- quick menu { -->
+            <section class="quick-menu-section">
+                <div class="menu-div">
+                    <div class="title">Quick Menu</div>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#" class="item">
+                                <img src="./img/quick-menu/icon1.png" alt="온라인 상담" class="icon" />
+                                <div class="text">온라인 상담</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="item">
+                                <img src="./img/quick-menu/icon2.png" alt="카카오톡 상담" class="icon" />
+                                <div class="text">카카오톡 상담</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="item">
+                                <img src="./img/quick-menu/icon3.png" alt="전화 상담" class="icon" />
+                                <div class="text">전화 상담</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="top-btn">
+                        <img src="./img/quick-menu/top.png" alt="상단으로 이동" class="icon" />
+                    </button>
+                </div>
+            </section>
+            <!-- } quick menu 끝 -->
+
+        </main>
+    </body>
+</html>

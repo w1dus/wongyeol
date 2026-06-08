@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp *)",
+      "Bash(curl -s -m 2 http://127.0.0.1:3845/mcp -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Read(//Users/kdelay/.claude/local/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('global mcpServers:', list\\(d.get\\('mcpServers',{}\\).keys\\(\\)\\)\\)\")",
+      "mcp__figma__get_screenshot",
+      "mcp__figma__get_design_context",
+      "mcp__figma__get_metadata",
+      "Bash(mkdir -p img/about)",
+      "Bash(curl -s -o img/about/hero.png      \"http://localhost:3845/assets/805acc5ebc632716a4ed482496316ec08818a067.png\")",
+      "Bash(curl -s -o img/about/building.png  \"http://localhost:3845/assets/c263f34b4430c02cebbaba06730801547c162eab.png\")",
+      "Bash(curl -s -o img/about/value.png     \"http://localhost:3845/assets/a59006cac8c687a7af7becb203d9789d10ad6129.png\")",
+      "Bash(curl -s -o img/about/icon01.svg    \"http://localhost:3845/assets/8e03db53a97a481ce1a723edeefc3965c9100828.svg\")",
+      "Bash(mkdir -p img/members)",
+      "Bash(curl -s -o img/members/hero.png \"http://localhost:3845/assets/6451a6d8a656c586c9ba19e16988860fe8e97808.png\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o img/members/detail-bg.png \"http://localhost:3845/assets/f4f0239baa95edb87032061d44f1460048aad27d.png\")",
+      "Bash(grep -c '<a href=\"#\" class=\"item\">[[:space:]]*$' members.html)",
+      "Bash(curl -s -o img/members/detail-logo.svg \"http://localhost:3845/assets/4cf94ba7f14658f7f493d5a81e3dd5ae64647b9f.svg\")",
+      "Bash(curl -s -o img/about/system-watermark.svg \"http://localhost:3845/assets/9d9c5084cfa342e7abad1df9c4166c1efc07e9c8.svg\")",
+      "Bash(curl -s -o img/main/inquiry-section/watermark.svg \"http://localhost:3845/assets/ac9f1e773eaf0d4db8d8e16296a723c3b04aef3a.svg\")",
+      "Bash(curl -s -o img/practice/hero.png \"http://localhost:3845/assets/790fb90710ea8e23b6e4e0f94c2d7670c02aa65f.png\")",
+      "Bash(python3 -)",
+      "Bash(curl -s -o img/case/hero.png \"http://localhost:3845/assets/44ddb56cd129312509b8a164436ce4e7e736e2d1.png\")",
+      "Bash(curl -s -o img/press/hero.png \"http://localhost:3845/assets/f061061994c33d3b378765bc4c76d1d4665cf244.png\")",
+      "Bash(curl -s -o img/consult/hero.png \"http://localhost:3845/assets/0b9bb430429a20517c52f6aa059c80b9b806eaf7.png\")",
+      "Bash(cd \"/Users/kdelay/Desktop\" && echo \"=== 프로젝트 img/boardImg ===\" && ls \"법무법인 원결/img/boardImg\" 2>/dev/null || echo \"없음\"; echo \"=== 참고 img/boardImg ===\" && ls \"게시판ver2/img/boardImg\" 2>/dev/null; echo \"=== 프로젝트 customBoard.css: basicList/allchk/menuBox/boardView 확인 ===\" && grep -oE '\\\\.\\(basicList|allchk|menuBox|boardView|viewArti|boardArti|basicBoardArti|boardWriteArti\\)\\\\b' \"법무법인 원결/style/customBoard.css\" | sort -u)"
+    ]
+  }
+}
