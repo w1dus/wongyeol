@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function(e){
     headerScrollHandler();
     bodyScroll();
     privacyUsePopup();
+    // ScrollSmoother 초기화/레이아웃 안정화 후 재관찰 → 첫 화면(상단 히어로 등) .ani 등장 보장
+    window.addEventListener("load", function(){ animationOnHandler(); });
+    setTimeout(animationOnHandler, 300);
 })
 document.addEventListener("scroll", function(){
     animationOnHandler();

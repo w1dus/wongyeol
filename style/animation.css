@@ -18,3 +18,20 @@
     0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
     100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
 }
+
+/* ===== 스크롤 등장 애니메이션 (.ani → common_jp.js IntersectionObserver가 .on 토글) ===== */
+.ani{ opacity: 0; transform: translateY(36px); transition: opacity 0.55s cubic-bezier(0.22,0.61,0.36,1), transform 0.55s cubic-bezier(0.22,0.61,0.36,1); }
+.ani.on{ opacity: 1; transform: translateY(0); }
+.ani.down{ transform: translateY(-30px); }
+.ani.down.on{ transform: translateY(0); }
+.ani.left{ transform: translateX(-50px); }
+.ani.left.on{ transform: translateX(0); }
+.ani.right{ transform: translateX(50px); }
+.ani.right.on{ transform: translateX(0); }
+.ani.zoom{ transform: scale(0.94); }
+.ani.zoom.on{ transform: scale(1); }
+.ani.delay1{ transition-delay: .08s; }
+.ani.delay2{ transition-delay: .16s; }
+.ani.delay3{ transition-delay: .24s; }
+.ani.delay4{ transition-delay: .32s; }
+.ani.delay5{ transition-delay: .4s; }
